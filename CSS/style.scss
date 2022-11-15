@@ -1,0 +1,31 @@
+$color-darkcyan: hsl(158, 36%, 37%);
+$color-cream: hsl(30, 38%, 92%);
+
+$color-darkblue: hsl(212, 21%, 14%);
+$color-grayish: hsl(228, 12%, 48%);
+$color-white: hsl(0, 0%, 100%);
+
+$fontsize: 14px;
+
+.image-container {
+    min-width: 1234px;
+    height: 70vh;
+    background-color: yellow;
+}
+
+.image {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/image-product-mobile.jpg); 
+}
+
+
+
+@media(min-width: 800px){
+    .image {
+        background-image: url(/images/image-product-desktop.jpg);
+        width: 100%;
+        height: 100%;
+    }
+}

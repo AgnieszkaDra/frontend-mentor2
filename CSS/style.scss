@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 $color-darkcyan: hsl(158, 36%, 37%);
 $color-cream: hsl(30, 38%, 92%);
 
@@ -10,9 +11,9 @@ $fontsize: 14px;
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -22,53 +23,61 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-  }
+}
 
 .container {
     background-color: $color-white;
     height: 90vh;
     padding: 2rem;
-   display: grid;
-   grid-template-columns: 100%;
-   grid-template-rows: 50% 50%;
-    .image{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+
+    .image {
         background-image: url("/images/image-product-mobile.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         min-height: 100%;
-        }
-    .text-h2 {
-        color: $color-grayish;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        font-weight: 300;
-        font-size: 12px;
-    }
-    .text-h1 {
-        color: $color-darkblue;
-        margin: 15px 0;
-		font-family: 'Fraunces', serif;
-		font-weight: bold;
-		line-height: 32px;
     }
 
-    .text-p {
-        color: $color-darkcyan;
-		padding: 10px 0;
-		font-size: 14px;
-		letter-spacing: 0.7px;
-		line-height: 24px;
+    .text {
+        padding: 10px;
+        
+        .text-h2 {
+            color: $color-grayish;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: 300;
+            font-size: 12px;
+        }
+
+        .text-h1 {
+            color: $color-darkblue;
+            margin: 15px 0;
+            font-family: 'Fraunces', serif;
+            font-weight: bold;
+            line-height: 32px;
+        }
+
+        .text-p {
+            color: $color-darkcyan;
+            padding: 10px 0;
+            font-size: 14px;
+            letter-spacing: 0.7px;
+            line-height: 24px;
+        }
     }
-    
+
+
 
 }
 
-@media(min-width: 800px){
+@media(min-width: 800px) {
     .container {
         border: 2px solid blue;
-    height: 70vh;
-    max-width: 600px;
-    display: flex;
+        height: 70vh;
+        max-width: 600px;
+        display: flex;
         flex-direction: row;
     }
 
@@ -76,16 +85,16 @@ body {
 
 
 
-@media(min-width:800px){
+@media(min-width:800px) {
     .image {
         background-image: url("/images/image-product-desktop.jpg");
         background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  min-height: 241px;
-  width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        min-height: 241px;
+        width: 100%;
     }
 }
 
@@ -93,10 +102,3 @@ body {
 
 
 
-// @media(min-width: 800px){
-//     .image {
-//         background-image: url(/images/image-product-desktop.jpg);
-//         width: 100%;
-//         height: 100%;
-//     }
-// }

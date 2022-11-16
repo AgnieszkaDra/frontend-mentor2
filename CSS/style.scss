@@ -28,7 +28,7 @@ body {
 .container {
     background-color: $color-white;
     height: 90vh;
-    padding: 2rem;
+    
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
@@ -74,11 +74,11 @@ body {
 
 @media(min-width: 800px) {
     .container {
-        border: 2px solid blue;
+        border-radius: 10px;
         height: 70vh;
         max-width: 600px;
-        display: flex;
-        flex-direction: row;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
     }
 
 }
@@ -91,8 +91,6 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
         min-height: 241px;
         width: 100%;
     }
